@@ -1,64 +1,124 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="industrial, industria, peça, metal, ferro, aluminio, fabrica, concordia, santa catarina" />
+    <meta name="URL" content="https://www.mavindustrial.com.br/" />
+    <meta name="target" content="www.mavindustrial.com.br/" />
+
     <title>MAV Industrial</title>
 
     <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/grid.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/responsivo.css">
 
     <style>
-      html, body {
-        height: 100%;
-      }
-      body {
-        background-color: #fff;
-        background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
-        color: #222;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      main {
-        padding: 1rem;
-        text-align: center;
-      }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        margin: 0;
-      }
-      @media screen and (max-width: 480px) {
-        h1 {
-          font-size: 1.5rem;
+        .float-wpp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF !important;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            /* box-shadow: 2px 2px 3px #999; */
+            z-index: 100;
         }
-      }
-      h1::after {
-        content: "";
-        background-color: #ffe800;
-        background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-        display: block;
-        height: 0.5rem;
-        margin-top: 1rem;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      p {
-        margin: 1rem 0 0 0;
-      }
+
+        .wpp-float {
+            margin-top: 16px;
+        }
     </style>
   </head>
   <body>
-    <main>
-      <h1>mavindustrial.com.br</h1>
-      <p>Our website is under construction.</p>
-    </main>
+    <header class="container header">
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="menu_ativo">Início</a>
+            <a href="" class="icon"><img src="assets/ic_menu.png"></a>
+            <a href="">Sobre a MAV</a>
+            <a href="">Portfólio</a>
+            <a href="">Informativos</a>
+            <a href="">Contato</a>
+        </nav>
+        <a href="index.html"><img src="assets/logo_topo.png" alt="MAV Industrial" class="logo"></a>
+    </header>
+
+    <section class="container icones_principal">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="assets/ic_conheca.png" alt="MAV">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="assets/ic_contate.png" alt="MAV">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="assets/ic_redes.png" alt="MAV">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="container sobre_principal">
+        <section class="grid-8">
+            <p>
+                A MAV Industrial desenvolve soluções. Os produtos que
+                fabricamos seguem todas as diretrizes de segurança e
+                qualidade necessárias para entregar ao nosso cliente
+                praticidade, celeridade e alta lucratividade.
+                <br>
+                Estamos há mais de dez anos no mercado atendendo o oeste
+                catarinense, o noroeste gaúcho e o sudoeste paranaense.
+                <br>
+                Informe suas necessidades, receba o contato da nossa equipe
+                e desenvolva as soluções necessárias para ter  maior e
+                melhor rendimento no seu campo industrial.
+            </p>
+        </section>
+        <section class="grid-8">
+            <img src="assets/img_peca.jpg" border="0">
+        </section>
+    </div>
+
+    <div class="container">
+        <img src="assets/img_footer.png" alt="footer detail">
+    </div>
+
+    <section class="localizacao">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.2278174445723!2d-51.99652598549159!3d-27.211996312305473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e381b39aa39705%3A0x646463b741bf9f0b!2sSC-283%20Rodovia%20Caetano%20Chiuchetta%2C%202295%20-%20Colinas%2C%20Conc%C3%B3rdia%20-%20SC%2C%2089700-489!5e0!3m2!1spt-BR!2sbr!4v1626393452280!5m2!1spt-BR!2sbr" width="100%" height="265" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="grid-2">
+                <img src="assets/logo_topo.png" alt="MAV Industrial" class="logo">
+            </a>
+            <div class="grid-12 info_rodape">
+                <p class="titulo_rodape">
+                    MAV Industrial
+                </p>
+                <address>
+                    Rodovia Caetano Chiuchetta, 2295 - Colinas - Concórdia/SC - (49) 99954.3453
+                </address>
+            </div>
+        </div>
+
+        <a href="https://wa.me/5549988746185?text=Ol%C3%A1%2C%20encontrei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20conversar!" class="float-wpp" target="_blank">
+            <i class="fa fa-whatsapp wpp-float"></i>
+        </a>
+    </footer>
   </body>
 </html>
