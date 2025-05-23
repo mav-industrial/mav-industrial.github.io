@@ -17,317 +17,38 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-icons.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="components/header_nav/nav.css">
+        <link rel="stylesheet" href="components/about/about.css">
+        <link rel="stylesheet" href="components/contact/contact.css">
+        <link rel="stylesheet" href="components/products/product-grid.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11418933953"></script>
         <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11418933953');</script>
+        <script src="data/products/index.js"></script>
+        <script src="components/hero/hero.js" defer></script>
+        <script src="components/header_nav/header.js" defer></script>
+        <script src="components/products/product-card.js" defer></script>
+        <script src="components/about/about.js" defer></script>
+        <script src="components/contact/contact.js" defer></script>
     </head>
     <body>
+        <mav-header></mav-header>
+        <mav-hero></mav-hero>
+        <mav-about></mav-about>
+
         <main>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/mav-logo.png" class="navbar-brand-image" alt="MAV Industrial">
-                    </a>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#home">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#sobre">Sobre</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#produtos">Produtos</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#contatos">Contatos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            
-
-            <section class="hero-section d-flex justify-content-center align-items-center" id="home">
-
-                <div class="section-hero-foother"></div>
-                <div class="section-overlay"></div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="75.1922mm" height="69.2066mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 2917.88 2685.61"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Camada_x0020_1">
-                        <path fill="#00A1C8" fill-opacity="1" d="M2913.11 1263c-46.24,114.46 -196.52,457.85 -208.08,474.2 -11.56,32.7 -34.68,49.05 -57.8,32.7 -115.6,-32.7 -416.16,-130.81 -416.16,-130.81 0,0 -69.36,114.47 -150.28,196.22 -92.48,98.11 -208.08,163.52 -208.08,163.52 0,0 115.6,392.44 115.6,408.79 11.56,16.35 0,49.05 -23.12,65.41 -104.04,49.05 -508.64,212.57 -508.64,212.57 0,0 -46.24,0 -57.8,-16.35 -34.68,-65.41 -208.08,-392.44 -208.08,-392.44 0,0 -127.16,16.35 -242.76,16.35 -127.16,0 -242.76,-16.35 -242.76,-16.35 0,0 -219.64,359.74 -231.2,376.09 -11.56,16.35 -57.8,16.35 -69.36,16.35l-404.6 -179.87 0 -2489.39 2917.88 0 0 1206.46 -4.77 56.54z"/>
-                    </g>
-                </svg>
-
+            <section class="product-section" id="produtos">
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <h2 class="text-white">Seja bem vindo à</h2>
-
-                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>MAV Industrial</span>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">Envolvedora de Filme Stretch</b>
-                                    <b>Envasadora para Líquidos e Pastosos</b>
-                                    <b>Equipamentos para Ramo Alimentício</b>
-                                </span>
-                            </h1>
-
-                            <div class="custom-btn-group">
-                                <a href="#produtos" class="btn custom-btn smoothscroll me-3">Ver produtos</a>
-                                <a href="#contatos" class="link smoothscroll">Contate-nos</a>
-                            </div>
+                        <div class="col-12">
+                            <h2>PRODUTOS</h2>
                         </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div id="video1" class="ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Jce-S-xIOU?si=TFRbcqEksqFn7St8" title="Envasadora para Líquidos e Pastosos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div id="video2" class="ratio ratio-16x9" style="display: none">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/cuVuwLgKlVM?si=cnndj3pVXj6c1U7p" title="Envolvedora de Filme Stretch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <p class="mb-3 mt-1">
-                                <a id="next-video" href="#" class="btn custom-video-btn smoothscroll me-3">MAIS VÍDEOS</a>
-                            </p>
-                        </div>
-
+                        <product-card></product-card>
                     </div>
                 </div>
             </section>
 
-
-            <section class="about-section section-padding" id="sobre">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
-                            <h3 class="mb-5">SOBRE</h3>
-
-                            <p>A <strong>MAV Industrial</strong> desenvolve soluções. Os produtos que fabricamos seguem todas as diretrizes de segurança e qualidade necessárias para entregar ao nosso cliente praticidade, celeridade e alta lucratividade.</p>
-                            <p>Estamos há mais de dez anos no mercado atendendo o sul do país.</p>
-                            <p>Informe suas necessidades, receba o contato da nossa equipe e desenvolva as soluções necessárias para ter maior e melhor rendimento no seu campo industrial.</p>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/mav-produto-1.jpg" class="member-block-image img-fluid" alt="">
-                                </div>
-                            </div>
-                            <br />
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/mav-produto-2.jpg" class="member-block-image img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/mav-produto-3.jpg" class="member-block-image img-fluid" alt="">
-                                </div>
-                            </div>
-                            <br />
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/mav-produto-4.jpg" class="member-block-image img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="product-selection section-bg" id="produtos">
-
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 62833.29 6118.78"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Camada_x0020_1">
-                        <path fill="#FFFFFF" fill-opacity="1" d="M46625.37 2243.86c0,0 -226.47,34.13 -432.92,38.6 -227.1,4.9 -414.19,-49.47 -414.19,-49.47l-377.08 709.38c0,0 -40.65,30.09 -61.93,1.34 -165.8,-25.63 -706.37,-189.23 -915.36,-301.57 -63.2,-57.07 -84.47,-85.82 -65.73,-173.89 19.38,-58.86 190.65,-734.55 190.65,-734.55 0,0 -167.69,-113.23 -314.74,-226.93 -168.95,-171.63 -296.62,-344.18 -296.62,-344.18 0,0 -574.27,187.73 -780.11,221.42 -41.28,0.88 -83.2,-27.42 -83.84,-56.63 -21.28,-28.75 -391.22,-897.26 -412.51,-926.01 0,0 -1.25,-58.4 40.03,-59.3l6958.15 -121.44c41.93,28.31 43.18,86.72 23.18,116.37 -58.15,176.57 -352.65,884.15 -352.65,884.15 0,0 0,0 0,0 -19.38,58.86 -81.32,60.2 -122.62,61.08 -207.72,-53.94 -707.01,-218.43 -707.01,-218.43 0,0 -180.75,237.65 -342.12,416.45 -141.98,119.94 -305.25,211.12 -305.25,211.12 0,0 222.26,725.61 222.89,754.82 0.63,29.21 1.9,87.61 -38.77,117.71 -183.9,91.63 -736.91,308.12 -880.16,369.66 -40.67,30.09 -103.23,2.24 -103.87,-26.97 -107.02,-172.99 -427.44,-662.75 -427.44,-662.75z"/>
-                        <rect fill="#FFFFFF" fill-opacity="1" x="0.01" y="0" width="62833.3" height="1288.28"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M42718.61 1723.52c0,0 -109.61,94.99 -218.57,167.33 -119.85,79.56 -238.37,113.85 -238.37,113.85l38.56 507.35c0,0 -11.55,29.88 -32.68,21.7 -97.4,42.46 -442.08,138.08 -591.98,148.77 -53.14,-9.12 -74.28,-17.29 -94.07,-70.77 -9.57,-38.06 -146.87,-457.64 -146.87,-457.64 0,0 -128.1,-3.79 -245.29,-14.79 -148.57,-34.6 -275.34,-83.67 -275.34,-83.67 0,0 -243.69,295.03 -342.41,382.8 -21.78,14.46 -53.82,13.52 -64.04,-1.9 -21.14,-8.17 -513.35,-347.55 -534.48,-355.73 0,0 -20.47,-30.83 1.33,-45.29 45.57,-96.89 216.95,-477.15 216.95,-477.15 0,0 -94.09,-70.77 -154.81,-185.89 -81.86,-123.29 -121.47,-230.24 -121.47,-230.24 0,0 -481.04,8.5 -523.96,14.79 -32.02,-0.94 -52.48,-31.77 -62.05,-69.83 -28.04,-136.83 -101.3,-554.52 -100.64,-577.17l4093.53 -53.14c0,0 -16.2,188.39 -41.98,338.75 -35.33,112.29 -91.8,216.39 -91.8,216.39 0,0 364.79,312.97 375.02,328.38 10.22,15.42 30.69,46.23 19.13,76.12 -67.35,111.35 -289.91,414.55 -345.71,496.02 -11.56,29.88 -54.48,36.17 -64.72,20.77 -115.87,-56.31 -453.28,-209.8 -453.28,-209.8z"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M52142.08 4395.47c0,0 -266.96,81.99 -515.12,124.62 -272.98,46.9 -508.39,15.05 -508.39,15.05l-326.82 923.48c0,0 -43.6,43.63 -74.44,12.78 -204.57,-1 -885.98,-100.8 -1158.27,-198.59 -86.5,-57.43 -117.36,-88.25 -110.63,-197.84 12.76,-74.47 97.43,-920.22 97.43,-920.22 0,0 -222.65,-106.31 -420.49,-216.88 -234.7,-176.52 -419.78,-361.58 -419.78,-361.58 0,0 -658.7,329.98 -900.82,407.71 -49.64,8.53 -105.3,-18.04 -111.33,-53.16 -30.84,-30.84 -633.61,-1011.48 -664.46,-1042.32 0,0 -12.06,-70.21 37.57,-78.74 155.62,-135.14 753.33,-671.48 753.33,-671.48 0,0 -110.63,-197.82 -128.02,-447.81 -48.24,-280.83 -34.77,-499.98 -34.77,-499.98 0,0 -853.73,-359.31 -934.21,-381.62 -55.66,-26.59 -67.72,-96.78 -54.97,-171.25l7817.69 -150.2c48.24,280.82 77.68,601.02 77.68,601.02 0,0 816.85,293.37 872.53,319.94 55.66,26.59 67.72,96.8 48.93,136.15 -38.27,223.42 -265.81,1129.84 -265.81,1129.84 0,0 0,0 0,0 -12.76,74.47 -87.21,87.25 -136.84,95.78 -260.23,-27.57 -892,-135.9 -892,-135.9 0,0 -175.12,319.2 -337.48,563.92 -149.6,170.25 -330.04,309.66 -330.04,309.66 0,0 398.91,834.97 404.94,870.07 6.02,35.11 18.09,105.31 -25.51,148.95 -205.26,143.66 -833.11,504.49 -994.76,604.53 -43.61,43.63 -124.09,21.31 -130.11,-13.79 -160.26,-189.31 -635.01,-722.13 -635.01,-722.13z"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M58618.17 4736.1c0,0 -296.89,120.45 -576.25,194.05 -307.3,80.95 -579.53,68.15 -579.53,68.15l-280.96 1088.19c0,0 -45.45,54.25 -83.81,22.08 -233.89,19.37 -1022.67,-26.39 -1343.67,-110.88 -104.63,-56.94 -142.97,-89.11 -146.27,-215.01 7.11,-86.38 19.13,-1061.48 19.13,-1061.48 0,0 -265.13,-99.18 -502.32,-205.75 -285.94,-178.22 -516.01,-371.15 -516.01,-371.15 0,0 -719.75,443.14 -988.69,556.24 -55.88,14.71 -122.16,-10.07 -132.57,-49.59 -38.34,-32.15 -825.53,-1092.53 -863.88,-1124.68 0,0 -20.81,-79.03 35.05,-93.75 164.33,-170.06 793.69,-842.94 793.69,-842.94 0,0 -146.27,-215.02 -191.19,-498.99 -83.28,-316.12 -89.86,-567.92 -89.86,-567.92 0,0 -1011.74,-325.09 -1105.96,-342.53 -66.28,-24.8 -87.11,-103.84 -79.99,-190.22l9068.83 -276.07c0,0 962.99,253.42 1029.27,278.21 66.28,24.8 87.11,103.84 69.58,150.7 -21.36,259.18 -190.56,1317.94 -190.56,1317.94 0,0 0,0 0,0 -7.13,86.38 -90.94,108.46 -146.8,123.18 -300.17,-5.43 -1033.1,-65.91 -1033.1,-65.91 0,0 -168.14,382.36 -329.17,678.32 -153.91,209.57 -346.17,387 -346.17,387 0,0 539.59,914.3 550,953.82 10.41,39.52 31.22,118.55 -14.23,172.78 -220.19,184.79 -901.6,660.08 -1076.33,790.62 -45.47,54.23 -139.67,36.79 -150.09,-2.71 -202.14,-200.31 -798.13,-761.68 -798.13,-761.68z"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M40091.15 2643.52c0,0 -126.65,59.81 -246.78,98.76 -132.16,42.82 -251.3,43.88 -251.3,43.88l-96.08 481.82c0,0 -18.53,24.77 -36.04,11.68 -101.61,14.15 -447.02,13.42 -589.18,-15.63 -47.06,-22.3 -64.59,-35.41 -69.09,-90.27 1,-37.88 -17.54,-463.78 -17.54,-463.78 0,0 -118.14,-36.82 -224.26,-77.55 -129.16,-70.82 -234.29,-149.41 -234.29,-149.41 0,0 -303.34,210.97 -417.96,266.9 -24.04,7.79 -53.57,-1.41 -59.08,-18.41 -17.51,-13.11 -386.97,-456.72 -404.49,-469.82 0,0 -11.02,-33.99 13.02,-41.79 67.58,-78.22 325.86,-387.28 325.86,-387.28 0,0 -69.09,-90.27 -95.63,-213.12 -44.05,-135.95 -53.07,-245.69 -53.07,-245.69 0,0 -449.52,-117.23 -491.07,-122.53 -29.53,-9.22 -40.55,-43.2 -39.55,-81.08 9.5,-134.53 50.02,-542 56.53,-562.89 3,-113.65 430.49,-64.41 525.61,-57.68l3287.79 -13.92c44.07,135.95 81.61,292.79 81.61,292.79 0,0 426.5,87.12 456.03,96.33 29.53,9.21 40.55,43.18 34.04,64.07 -2.99,113.65 -51.02,579.9 -51.02,579.9 0,0 0,0 0,0 -1,37.87 -37.04,49.55 -61.07,57.34 -131.16,4.95 -452.52,-3.56 -452.52,-3.56 0,0 -64.07,170.99 -127.14,304.09 -62.07,95.24 -141.65,177.36 -141.65,177.36 0,0 257.81,385.89 263.32,402.89 5.51,17 16.53,50.98 -1.99,75.76 -91.61,86.02 -377.42,310.1 -450.51,371.34 -18.51,24.77 -60.06,19.46 -65.57,2.47 -93.11,-82.5 -366.94,-312.99 -366.94,-312.99z"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M37392.8 1630.16c0,0 -109.61,94.99 -218.57,167.33 -119.85,79.56 -238.37,113.85 -238.37,113.85l38.56 507.35c0,0 -11.55,29.88 -32.68,21.7 -97.4,42.46 -442.08,138.08 -591.98,148.77 -53.14,-9.12 -74.28,-17.29 -94.07,-70.77 -9.57,-38.06 -146.87,-457.64 -146.87,-457.64 0,0 -128.1,-3.79 -245.29,-14.79 -148.57,-34.6 -275.34,-83.67 -275.34,-83.67 0,0 -243.69,295.03 -342.41,382.8 -21.78,14.46 -53.82,13.52 -64.04,-1.9 -21.14,-8.17 -513.35,-347.55 -534.48,-355.73 0,0 -20.47,-30.83 1.33,-45.29 45.57,-96.89 216.95,-477.15 216.95,-477.15 0,0 -94.09,-70.77 -154.81,-185.89 -81.86,-123.29 -121.47,-230.24 -121.47,-230.24 0,0 -481.04,8.5 -523.96,14.79 -32.02,-0.94 -52.48,-31.77 -62.05,-69.83 -28.04,-136.83 -101.3,-554.52 -100.64,-577.17l4051.56 285.6c-35.33,112.29 -91.8,216.39 -91.8,216.39 0,0 364.79,312.97 375.02,328.38 10.22,15.42 30.69,46.23 19.13,76.12 -67.35,111.35 -289.91,414.55 -345.71,496.02 -11.56,29.88 -54.48,36.17 -64.72,20.77 -115.87,-56.31 -453.28,-209.8 -453.28,-209.8z"/>
-                        <path fill="#FFFFFF" fill-opacity="1" d="M34832.71 717.94c0,0 -109.61,94.99 -218.57,167.33 -119.85,79.56 -238.37,113.85 -238.37,113.85l38.56 507.35c0,0 -11.55,29.88 -32.68,21.7 -97.4,42.46 -442.08,138.08 -591.98,148.77 -53.14,-9.12 -74.28,-17.29 -94.07,-70.77 -9.57,-38.06 -146.87,-457.64 -146.87,-457.64 0,0 -128.1,-3.79 -245.29,-14.79 -148.57,-34.6 -275.34,-83.67 -275.34,-83.67 0,0 -243.69,295.03 -342.41,382.8 -21.78,14.46 -53.82,13.52 -64.04,-1.9 -21.14,-8.17 -513.35,-347.55 -534.48,-355.73 0,0 -20.47,-30.83 1.33,-45.29 45.57,-96.89 216.95,-477.15 216.95,-477.15 0,0 -94.09,-70.77 -154.81,-185.89l3526.66 -32.08c10.22,15.42 30.69,46.23 19.13,76.12 -67.35,111.35 -289.91,414.55 -345.71,496.02 -11.56,29.88 -54.48,36.17 -64.72,20.77 -115.87,-56.31 -453.28,-209.8 -453.28,-209.8z"/>
-                    </g>
-                </svg>
-
-                <div class="container">
-                    <div class="row mt-4">
-                        <div class="col-lg-12 col-12">
-                            <h2 class="mb-lg-3">PRODUTOS</h2>
-                        </div>
-
-                        <div class="row custom-block custom-block-bg mb-3">
-                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
-                                <div class="custom-block-image-wrap">
-                                    <a href="envasadora-para-liquidos-e-pastosos.html">
-                                        <img src="images/mav-envasadora.jpg" class="custom-block-image img-fluid" alt="MAV Envasadoras">
-
-                                        <i class="custom-block-icon bi-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8 col-12 order-3 order-lg-0">
-                                <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="envasadora-para-liquidos-e-pastosos.html" class="events-title mb-3">Envasadora para líquidos e pastosos</a>
-
-                                    <p class="mb-0">
-                                        Equipamento para envase de copos e potes, indicado para produtos líquidos, pastosos e granulado.<br />
-                                        Projetados para produzir até 1500 copo/hora, com estrutura em Aço Inox e automação personalizada para melhor atender sua demanda!
-                                    </p>
-                                    
-                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
-                                        <div class="d-flex align-items-center ms-lg-auto">
-                                            <a class="btn custom-btn" href="envasadora-para-liquidos-e-pastosos.html">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row custom-block custom-block-bg mb-3">
-                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
-                                <div class="custom-block-image-wrap">
-                                    <a href="envolvedora-de-filme-stretch.html">
-                                        <img src="images/mav-envolvedora.jpg" class="custom-block-image img-fluid" alt="MAV Envolvedoras">
-
-                                        <i class="custom-block-icon bi-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8 col-12 order-3 order-lg-0">
-                                <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="envolvedora-de-filme-stretch.html" class="events-title mb-3">Envolvedora de Filme Stretch</a>
-
-                                    <p class="mb-0">
-                                        Nossa envolvedora de paletes representa o auge da tecnologia em plastificação de produtos, projetada para elevar os padrões de qualidade, eficiência e segurança na logística e armazenamento de produtos.
-                                    </p>
-
-                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
-                                        <div class="d-flex align-items-center ms-lg-auto">
-                                            <a class="btn custom-btn" href="envolvedora-de-filme-stretch.html">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row custom-block custom-block-bg">
-                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
-                                <div class="custom-block-image-wrap">
-                                    <a href="outros-produtos.html">
-                                        <img src="images/mav-outros-produtos.jpg" class="custom-block-image img-fluid" alt="MAV Envolvedoras">
-
-                                        <i class="custom-block-icon bi-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8 col-12 order-3 order-lg-0">
-                                <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="outros-produtos.html" class="events-title mb-3">Outros produtos</a>
-
-                                    <p class="mb-0">
-                                        Conheça nossa linha de equipamentos para o Ramo Alimentício.<br />
-                                        Carrinhos - Caçambas - Prateleiras - Cubas Assépsia - Esteiras - Ralos - Tanques<br />
-                                        Esterilizadoras - Lavador de Botas - Mesas - Tunel de Encolhimento
-                                    </p>
-
-                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
-                                        <div class="d-flex align-items-center ms-lg-auto">
-                                            <a class="btn custom-btn" href="outros-produtos.html">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-
-            <section class="contact-section" id="contatos">
-
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 61798.86 6018.04"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Camada_x0020_1">
-                        <path fill="#f4f4f4" fill-opacity="1" d="M15941.09 2206.92c0,0 222.74,33.56 425.79,37.97 223.36,4.82 407.37,-48.66 407.37,-48.66l370.88 697.7c0,0 39.98,29.6 60.91,1.32 163.07,-25.21 694.74,-186.12 900.29,-296.61 62.16,-56.13 83.08,-84.41 64.65,-171.02 -19.06,-57.89 -187.51,-722.46 -187.51,-722.46 0,0 164.93,-111.37 309.56,-223.19 166.17,-168.81 291.74,-338.51 291.74,-338.51 0,0 564.82,184.64 767.26,217.77 40.6,0.87 81.83,-26.97 82.46,-55.7 20.93,-28.28 384.78,-882.49 405.72,-910.76 0,0 1.23,-57.44 -39.37,-58.32l-6843.6 -119.44c-41.24,27.84 -42.47,85.29 -22.8,114.46 57.19,173.66 346.84,869.59 346.84,869.59 0,0 0,0 0,0 19.06,57.89 79.98,59.21 120.6,60.07 204.3,-53.05 695.37,-214.83 695.37,-214.83 0,0 177.77,233.74 336.49,409.6 139.65,117.96 300.23,207.65 300.23,207.65 0,0 -218.6,713.66 -219.22,742.39 -0.62,28.73 -1.87,86.16 38.13,115.77 180.88,90.12 724.77,303.05 865.67,363.58 40,29.6 101.53,2.2 102.16,-26.52 105.26,-170.14 420.4,-651.84 420.4,-651.84z"/>
-                        <rect fill="#f4f4f4" fill-opacity="1" x="-0.02" y="0" width="61798.87" height="1267.07"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M19783.54 1695.15c0,0 107.81,93.42 214.98,164.58 117.87,78.25 234.45,111.98 234.45,111.98l-37.92 498.99c0,0 11.36,29.39 32.14,21.34 95.8,41.76 434.8,135.81 582.23,146.33 52.27,-8.97 73.05,-17.01 92.52,-69.61 9.42,-37.43 144.46,-450.1 144.46,-450.1 0,0 125.99,-3.72 241.25,-14.54 146.12,-34.03 270.81,-82.3 270.81,-82.3 0,0 239.67,290.17 336.78,376.5 21.43,14.23 52.93,13.3 62.99,-1.87 20.79,-8.04 504.9,-341.83 525.68,-349.87 0,0 20.14,-30.32 -1.3,-44.55 -44.82,-95.29 -213.38,-469.3 -213.38,-469.3 0,0 92.54,-69.61 152.26,-182.83 80.51,-121.26 119.47,-226.45 119.47,-226.45 0,0 473.12,8.36 515.33,14.54 31.49,-0.93 51.61,-31.25 61.03,-68.68 27.58,-134.58 99.64,-545.39 98.98,-567.67l-4026.14 -52.27c0,0 15.93,185.29 41.29,333.17 34.75,110.44 90.29,212.83 90.29,212.83 0,0 -358.78,307.82 -368.85,322.97 -10.05,15.17 -30.19,45.47 -18.82,74.86 66.25,109.52 285.13,407.73 340.02,487.85 11.37,29.39 53.58,35.58 63.65,20.43 113.96,-55.38 445.81,-206.34 445.81,-206.34z"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M10515.2 4323.11c0,0 262.56,80.64 506.64,122.57 268.49,46.12 500.02,14.8 500.02,14.8l321.43 908.27c0,0 42.88,42.91 73.21,12.57 201.2,-0.99 871.39,-99.14 1139.2,-195.32 85.08,-56.48 115.43,-86.8 108.81,-194.58 -12.55,-73.24 -95.83,-905.07 -95.83,-905.07 0,0 218.99,-104.56 413.57,-213.31 230.84,-173.62 412.87,-355.62 412.87,-355.62 0,0 647.85,324.55 885.99,400.99 48.82,8.39 103.56,-17.75 109.5,-52.28 30.33,-30.33 623.18,-994.83 653.52,-1025.16 0,0 11.86,-69.06 -36.95,-77.44 -153.06,-132.91 -740.93,-660.43 -740.93,-660.43 0,0 108.81,-194.56 125.91,-440.44 47.44,-276.21 34.2,-491.75 34.2,-491.75 0,0 839.68,-353.39 918.83,-375.34 54.74,-26.15 66.61,-95.19 54.06,-168.43l-7688.98 -147.73c-47.44,276.19 -76.4,591.12 -76.4,591.12 0,0 -803.41,288.54 -858.16,314.67 -54.74,26.15 -66.61,95.2 -48.12,133.91 37.64,219.74 261.43,1111.24 261.43,1111.24 0,0 0,0 0,0 12.55,73.24 85.77,85.82 134.59,94.2 255.94,-27.12 877.31,-133.66 877.31,-133.66 0,0 172.24,313.95 331.92,554.63 147.14,167.45 324.61,304.56 324.61,304.56 0,0 -392.34,821.22 -398.27,855.74 -5.92,34.54 -17.79,103.58 25.09,146.5 201.88,141.3 819.4,496.18 978.39,594.57 42.89,42.91 122.05,20.96 127.97,-13.56 157.62,-186.19 624.56,-710.25 624.56,-710.25z"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M4145.73 4658.13c0,0 292,118.47 566.76,190.86 302.24,79.62 569.99,67.03 569.99,67.03l276.34 1070.27c0,0 44.7,53.35 82.43,21.71 230.04,19.05 1005.84,-25.96 1321.55,-109.05 102.91,-56 140.62,-87.64 143.86,-211.47 -7,-84.96 -18.82,-1044.01 -18.82,-1044.01 0,0 260.77,-97.55 494.05,-202.36 281.24,-175.28 507.51,-365.04 507.51,-365.04 0,0 707.9,435.85 972.42,547.09 54.96,14.47 120.15,-9.91 130.39,-48.78 37.71,-31.62 811.94,-1074.54 849.66,-1106.17 0,0 20.47,-77.73 -34.48,-92.2 -161.62,-167.26 -780.62,-829.06 -780.62,-829.06 0,0 143.86,-211.48 188.05,-490.78 81.91,-310.92 88.38,-558.57 88.38,-558.57 0,0 995.09,-319.74 1087.76,-336.89 65.19,-24.39 85.67,-102.13 78.67,-187.09l-8919.53 -271.53c0,0 -947.14,249.25 -1012.33,273.63 -65.19,24.39 -85.67,102.13 -68.43,148.22 21.01,254.91 187.42,1296.24 187.42,1296.24 0,0 0,0 0,0 7.01,84.96 89.44,106.68 144.38,121.15 295.23,-5.35 1016.09,-64.83 1016.09,-64.83 0,0 165.37,376.06 323.75,667.15 151.38,206.12 340.47,380.63 340.47,380.63 0,0 -530.7,899.25 -540.94,938.11 -10.24,38.87 -30.71,116.6 13.99,169.94 216.57,181.74 886.76,649.21 1058.61,777.61 44.72,53.34 137.37,36.19 147.61,-2.67 198.81,-197.01 784.99,-749.14 784.99,-749.14z"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M22367.73 2600c0,0 124.57,58.83 242.72,97.13 129.98,42.11 247.16,43.15 247.16,43.15l94.49 473.89c0,0 18.22,24.37 35.45,11.49 99.94,13.92 439.66,13.2 579.48,-15.37 46.28,-21.93 63.52,-34.82 67.95,-88.79 -0.99,-37.26 17.25,-456.14 17.25,-456.14 0,0 116.19,-36.22 220.57,-76.27 127.03,-69.65 230.43,-146.95 230.43,-146.95 0,0 298.34,207.5 411.08,262.5 23.64,7.66 52.69,-1.39 58.1,-18.11 17.22,-12.89 380.6,-449.2 397.84,-462.08 0,0 10.84,-33.43 -12.81,-41.1 -66.46,-76.94 -320.49,-380.9 -320.49,-380.9 0,0 67.95,-88.79 94.06,-209.62 43.33,-133.71 52.19,-241.64 52.19,-241.64 0,0 442.12,-115.3 482.99,-120.51 29.04,-9.07 39.88,-42.49 38.9,-79.75 -9.34,-132.32 -49.2,-533.08 -55.6,-553.62 -2.96,-111.78 -423.4,-63.35 -516.96,-56.73l-3233.66 -13.69c-43.34,133.71 -80.27,287.97 -80.27,287.97 0,0 -419.48,85.69 -448.52,94.74 -29.04,9.05 -39.88,42.47 -33.48,63.02 2.94,111.78 50.18,570.35 50.18,570.35 0,0 0,0 0,0 0.99,37.24 36.43,48.73 60.06,56.39 129,4.87 445.07,-3.51 445.07,-3.51 0,0 63.02,168.17 125.05,299.08 61.04,93.67 139.31,174.44 139.31,174.44 0,0 -253.57,379.54 -258.98,396.26 -5.42,16.72 -16.25,50.14 1.96,74.52 90.1,84.6 371.21,304.99 443.09,365.23 18.21,24.37 59.07,19.14 64.49,2.43 91.58,-81.14 360.9,-307.83 360.9,-307.83z"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M25021.67 1603.32c0,0 107.81,93.42 214.98,164.58 117.87,78.25 234.45,111.98 234.45,111.98l-37.92 498.99c0,0 11.36,29.39 32.14,21.34 95.8,41.76 434.8,135.81 582.23,146.33 52.27,-8.97 73.05,-17.01 92.52,-69.61 9.42,-37.43 144.46,-450.1 144.46,-450.1 0,0 125.99,-3.72 241.25,-14.54 146.12,-34.03 270.81,-82.3 270.81,-82.3 0,0 239.67,290.17 336.78,376.5 21.43,14.23 52.93,13.3 62.99,-1.87 20.79,-8.04 504.9,-341.83 525.68,-349.87 0,0 20.14,-30.32 -1.3,-44.55 -44.82,-95.29 -213.38,-469.3 -213.38,-469.3 0,0 92.54,-69.61 152.26,-182.83 80.51,-121.26 119.47,-226.45 119.47,-226.45 0,0 473.12,8.36 515.33,14.54 31.49,-0.93 51.61,-31.25 61.03,-68.68 27.58,-134.58 99.64,-545.39 98.98,-567.67l-3984.86 280.9c34.75,110.44 90.29,212.83 90.29,212.83 0,0 -358.78,307.82 -368.85,322.97 -10.05,15.17 -30.19,45.47 -18.82,74.86 66.25,109.52 285.13,407.73 340.02,487.85 11.37,29.39 53.58,35.58 63.65,20.43 113.96,-55.38 445.81,-206.34 445.81,-206.34z"/>
-                        <path fill="#f4f4f4" fill-opacity="1" d="M27539.61 706.12c0,0 107.81,93.42 214.98,164.58 117.87,78.25 234.45,111.98 234.45,111.98l-37.92 498.99c0,0 11.36,29.39 32.14,21.34 95.8,41.76 434.8,135.81 582.23,146.33 52.27,-8.97 73.05,-17.01 92.52,-69.61 9.42,-37.43 144.46,-450.1 144.46,-450.1 0,0 125.99,-3.72 241.25,-14.54 146.12,-34.03 270.81,-82.3 270.81,-82.3 0,0 239.67,290.17 336.78,376.5 21.43,14.23 52.93,13.3 62.99,-1.87 20.79,-8.04 504.9,-341.83 525.68,-349.87 0,0 20.14,-30.32 -1.3,-44.55 -44.82,-95.29 -213.38,-469.3 -213.38,-469.3 0,0 92.54,-69.61 152.26,-182.83l-3468.6 -31.55c-10.05,15.17 -30.19,45.47 -18.82,74.86 66.25,109.52 285.13,407.73 340.02,487.85 11.37,29.39 53.58,35.58 63.65,20.43 113.96,-55.38 445.81,-206.34 445.81,-206.34z"/>
-                    </g>
-                </svg>
-
-                <div class="container">
-                    <div class="row mt-4">
-                        <div class="col-lg-12 col-12">
-                            <h2 class="mb-lg-3">CONTATOS</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12">
-                            <img src="images/mav-logo.png" class="footer-logo-image" alt="">
-                            
-                            <p class="mb-0 pt-3">
-                                <i class="bi-telephone-fill"></i> <strong>+55 (49) 98874-6185</strong>
-                            </p>
-                                                        
-                            <h3 class="mb-lg-3 mt-4 pt-3">Siga nos nas redes sociais</h3>
-                            <ul class="social-icon">
-                                <li class="social-icon-item">
-                                    <a href="https://www.youtube.com/@MAVIndustrial" class="social-icon-link bi-youtube"></a>
-                                </li>
-    
-                                <li class="social-icon-item">
-                                    <a href="https://www.instagram.com/mav_industrial" class="social-icon-link bi-instagram"></a>
-                                </li>
-    
-                                <li class="social-icon-item">
-                                    <a href="https://www.facebook.com/profile.php?id=100091909660962" class="social-icon-link bi-facebook"></a>
-                                </li>
-    
-                                <li class="social-icon-item">
-                                    <a href="mailto:vendas@mavindustrial.com.br" class="social-icon-link bi-envelope-check"></a>
-                                </li>
-                            </ul>
-                            
-                            <h4 class="mb-lg-3 mt-4 pt-3">Localização</h4>
-                            <p class="mb-0">
-                                Rodovia Caetano Chiuchetta, 2295<br />
-                                Bairro Colinas - 89.700-489<br />
-                                Concórdia / SC
-                            </p>
-                            <a href="https://www.google.com/maps/dir/-27.230208,-52.0257536/MAV+Industrial,+SC-283+Rodovia+Caetano+Chiuchetta,+2295+-+Sala+Comercial+2+-+Colinas,+Conc%C3%B3rdia+-+SC,+89700-489/@-27.2167947,-52.0204572,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94e381425d0d991f:0x6883ccd745e45fa7!2m2!1d-51.9940769!2d-27.2130756?entry=ttu" class="link smoothscroll" target="_blank">
-                                <i class="bi-geo-fill"></i> Ir até o local
-                            </a>
-                        </div> 
-                    </div>
-                </div>
-            </section>
+            <mav-contact></mav-contact>
         </main>
 
         <a id="wppContact" href="https://wa.me/5549988746185?text=Ol%C3%A1%2C%20encontrei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20conversar!" class="float-wpp" target="_blank">
@@ -337,7 +58,6 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
         <script src="js/animated-headline.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
@@ -345,12 +65,76 @@
         <script>
             var wpp = document.getElementById("wppContact");
             wpp.addEventListener("click", function(event) {
-                // Event snippet for Contato conversion page
                 gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});
-                // Allow the default behavior of the anchor tag (navigate to the href)
-                // If you want to prevent the default behavior, remove the next line
-                // event.preventDefault();
             });
+        </script>
+
+        <script>
+            // Função para carregar produtos em background
+            function lazyLoadProducts() {
+                console.log('🔄 Iniciando carregamento dos produtos...');
+                
+                return new Promise((resolve) => {
+                    const script = document.createElement('script');
+                    script.src = 'data/products/index.js';
+                    script.onload = () => {
+                        console.log('✨ Produtos carregados com sucesso!');
+                        localStorage.setItem('mavProducts', JSON.stringify(mavProducts));
+                        resolve();
+                    };
+                    script.onerror = () => {
+                        console.log('❌ Erro ao carregar produtos');
+                        resolve();
+                    };
+                    document.body.appendChild(script);
+                });
+            }
+
+            // Função para carregar imagens em background
+            async function preloadImages(products) {
+                console.log('🚀 Iniciando preload das imagens e modelos...');
+                
+                for (const product of products) {
+                    if (product.images?.model3d) {
+                        console.log(`🎮 Verificando modelo 3D: ${product.images.model3d}`);
+                        
+                        try {
+                            const response = await fetch(product.images.model3d, {
+                                cache: 'force-cache',
+                                headers: {
+                                    'Cache-Control': 'max-age=31536000'
+                                }
+                            });
+                            
+                            if (response.ok) {
+                                console.log(`✨ Modelo 3D carregado: ${product.images.model3d}`);
+                            } else {
+                                console.log(`⚠️ Modelo 3D não encontrado: ${product.images.model3d}`);
+                            }
+                        } catch (error) {
+                            console.log(`❌ Erro ao carregar modelo 3D: ${error}`);
+                        }
+                    }
+                }
+            }
+
+            // Inicia o lazy loading após a página carregar
+            window.addEventListener('load', async () => {
+                console.log('🎯 Iniciando lazy loading...');
+                
+                const cachedProducts = localStorage.getItem('mavProducts');
+                
+                if (!cachedProducts) {
+                    console.log('🔍 Cache não encontrado, carregando produtos...');
+                    await lazyLoadProducts();
+                } else {
+                    console.log('📋 Usando produtos do cache');
+                    window.mavProducts = JSON.parse(cachedProducts);
+                }
+
+                // Preload das imagens
+                await preloadImages(mavProducts);
+        });
         </script>
 
     </body>
