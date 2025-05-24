@@ -68,7 +68,7 @@ window.mavProducts = [
                 "images/DRENO-PRENSA AUTOMÁTICA.png"
             ],
             model3d: "models/montagem_drenoprensa_4000_litros.glb",
-            webCarousel: "images/DRENO-PRENSA AUTOMÁTICA.png",
+            webCarousel: "images/reno_prensa.png",
             mobileCarousel: "images/DRENO-PRENSA AUTOMÁTICA.png",            
         },
         video: {
