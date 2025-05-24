@@ -263,7 +263,7 @@ window.mavProducts = [
             gallery: [
                 "images/envasadora-de-potes-automatica-01.png"
             ],
-            model3d: "models/envasadora_1400.glb",
+            model3d: null,
             webCarousel: "images/envasadora-de-potes-automatica-01.png",
             mobileCarousel: "images/envasadora-de-potes-automatica-01.png",            
         },
