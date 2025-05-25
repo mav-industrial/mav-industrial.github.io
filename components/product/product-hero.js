@@ -99,15 +99,11 @@ class ProductHero extends HTMLElement {
                 `;
             } catch (error) {
                 console.error('Erro ao renderizar modelo:', error);
-                // Fallback para imagem
-                model3d = product.images?.thumbnail ? `
-                    <div class="product-hero__3d-container">
-                        <img src="${product.images.thumbnail}" 
-                             alt="${product.name}" 
-                             style="width: 100%; height: fit-content;">
-                    </div>
-                ` : '';
+                model3d = this.getThumbnailHTML(product);
             }
+        } else {
+            // Se não tem modelo 3D, usa a thumbnail
+            model3d = this.getThumbnailHTML(product);
         }
 
         // Validação mais segura para o vídeo
@@ -201,6 +197,16 @@ class ProductHero extends HTMLElement {
                 </div>
             </section>
         `;
+    }
+
+    getThumbnailHTML(product) {
+        return product.images?.thumbnail ? `
+            <div class="product-hero__3d-container">
+                <img src="${product.images.thumbnail}" 
+                     alt="${product.name}" 
+                     style="width: 100%; height: fit-content;">
+            </div>
+        ` : '';
     }
 }
 
