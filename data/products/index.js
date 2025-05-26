@@ -49,8 +49,8 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
+            order_banner: 4, // Ordem de exibição
+            order_gallery: 4, // Ordem de exibição
         }
     },
     {
@@ -93,8 +93,8 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
+            order_banner: 2, // Ordem de exibição
+            order_gallery: 2, // Ordem de exibição
         }
     },
     {
@@ -147,8 +147,8 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
+            order_banner: 4, // Ordem de exibição
+            order_gallery: 4, // Ordem de exibição
         }
     },
     {
@@ -191,8 +191,8 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
+            order_banner: 3, // Ordem de exibição
+            order_gallery: 3, // Ordem de exibição
         }
     },
     {
@@ -245,8 +245,8 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
+            order_banner: 4, // Ordem de exibição
+            order_gallery: 4, // Ordem de exibição
         }
     },
     {
