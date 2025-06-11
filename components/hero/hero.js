@@ -49,11 +49,7 @@ class MavHero extends HTMLElement {
                                             <div class="banner-center">
                                                 <img src="${product.images.webCarousel}" alt="${product.name}" class="banner-logo">
                                             </div>
-                                            <div class="banner-right">
-                                                <h1>MAV</h1>
-                                                <h1>INDUSTRIAL</h1>
-                                                <p>Tecnologia para Laticínios</p>
-                                            </div>
+                                            
                                         </div>
                                     </div>`
                                     : `<div class="slide-content">

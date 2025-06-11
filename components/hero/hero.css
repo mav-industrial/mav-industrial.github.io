@@ -394,14 +394,14 @@
 }
 
 .banner-logo {
-    max-width: 220px;
-    max-height: 220px;
+    max-width: 350px !important;
+    max-height: 350px !important;
     margin: 0 auto;
     display: block;
     background: #fff;
     border-radius: 50%;
-    padding: 1.5rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 0.8rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .highlight {
@@ -428,8 +428,8 @@
     }
     
     .banner-logo {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 180px;
+        max-height: 180px;
         padding: 1rem;
     }
     
@@ -521,4 +521,14 @@
 @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
+}
+
+.banner-logo {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 0.6rem;
+}
+
+.banner-right p {
+    font-size: 1.2rem;
 }
