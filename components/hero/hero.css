@@ -298,3 +298,227 @@
         right: 0.5rem;
     }
 }
+
+.special-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: #323232;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.special-banner .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-left, .banner-center, .banner-right {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-left {
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-center {
+    align-items: center;
+    text-align: center;
+}
+
+.banner-right {
+    align-items: center;
+    text-align: center;
+}
+
+.banner-right h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.banner-right p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.banner-left p {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: #e6e6e6;
+}
+
+.banner-left h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #00b5d9;
+    line-height: 1.1;
+}
+
+.banner-left .btn-primary {
+    margin-top: 1.5rem;
+    background: #00b5d9;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    transition: background 0.2s;
+}
+
+.banner-left .btn-primary:hover {
+    background: #008ca7;
+    transform: translateY(-2px);
+}
+
+.banner-logo {
+    max-width: 220px;
+    max-height: 220px;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.highlight {
+    color: #00b5d9;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+    .special-banner {
+        padding: 1rem;
+    }
+    
+    .special-banner .banner-container {
+        flex-direction: column;
+    }
+    
+    .banner-left, .banner-center, .banner-right {
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
+    .banner-logo {
+        max-width: 150px;
+        max-height: 150px;
+        padding: 1rem;
+    }
+    
+    .banner-right h1 {
+        font-size: 2rem;
+    }
+    
+    .banner-left h2 {
+        font-size: 2rem;
+    }
+    
+    .banner-left p {
+        font-size: 1.2rem;
+    }
+    
+    .banner-right p {
+        font-size: 1.2rem;
+    }
+}
+
+.animated-text {
+    position: relative;
+    display: inline-block;
+    color: #00b5d9;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    height: 60px;
+    min-width: 300px;
+}
+
+.animated-text::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #00b5d9;
+    animation: blink 1s infinite;
+}
+
+.text-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typeWriter 8s infinite;
+}
+
+.text-item:nth-child(1) { animation-delay: 0s; }
+.text-item:nth-child(2) { animation-delay: 2s; }
+.text-item:nth-child(3) { animation-delay: 4s; }
+.text-item:nth-child(4) { animation-delay: 6s; }
+
+@keyframes typeWriter {
+    0% { 
+        opacity: 1;
+        width: 0; 
+    }
+    5% { 
+        opacity: 1;
+        width: 0; 
+    }
+    15% { 
+        opacity: 1;
+        width: 100%; 
+    }
+    20% { 
+        opacity: 1;
+        width: 100%; 
+    }
+    23% { 
+        opacity: 1;
+        width: 0; 
+    }
+    25% { 
+        opacity: 0;
+        width: 0; 
+    }
+    100% { 
+        opacity: 0;
+        width: 0; 
+    }
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

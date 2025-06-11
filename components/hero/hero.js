@@ -31,19 +31,45 @@ class MavHero extends HTMLElement {
                     <div class="carousel-track">
                         ${orderedProducts.map((product, index) => `
                             <div class="carousel-slide ${index === 0 ? 'active' : ''}" data-index="${index}">
-                                <div class="slide-content">
-                                    <div class="slide-text">
-                                        <h2>${product.name}</h2>
-                                        <p>${product.shortDescription}</p>
-                                        <div class="slide-buttons">
-                                            <a href="produto.html?slug=${product.slug}" class="btn-primary">Ver mais</a>
-                                            <a href="#contatos" class="btn-secondary">Contate-nos</a>
+                                ${product.slug === 'mav_logo' 
+                                    ? `<div class="special-banner">
+                                        <div class="banner-container">
+                                            <div class="banner-left">
+                                                <p>Transformamos cada gota de leite em</p>
+                                                <h2>
+                                                    <span class="animated-text">
+                                                        <span class="text-item">produtividade</span>
+                                                        <span class="text-item">eficiência</span>
+                                                        <span class="text-item">qualidade</span>
+                                                        <span class="text-item">inovação</span>
+                                                    </span>
+                                                </h2>
+                                                <a href="#produtos" class="btn-primary">Conheça nossos produtos</a>
+                                            </div>
+                                            <div class="banner-center">
+                                                <img src="${product.images.webCarousel}" alt="${product.name}" class="banner-logo">
+                                            </div>
+                                            <div class="banner-right">
+                                                <h1>MAV</h1>
+                                                <h1>INDUSTRIAL</h1>
+                                                <p>Tecnologia para Laticínios</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="slide-image">
-                                        <img src="${product.images.webCarousel}" alt="${product.name}">
-                                    </div>
-                                </div>
+                                    </div>`
+                                    : `<div class="slide-content">
+                                        <div class="slide-text">
+                                            <h2>${product.name}</h2>
+                                            <p>${product.shortDescription}</p>
+                                            <div class="slide-buttons">
+                                                <a href="produto.html?slug=${product.slug}" class="btn-primary">Ver mais</a>
+                                                <a href="#contatos" class="btn-secondary">Contate-nos</a>
+                                            </div>
+                                        </div>
+                                        <div class="slide-image">
+                                            <img src="${product.images.webCarousel}" alt="${product.name}">
+                                        </div>
+                                    </div>`
+                                }
                             </div>
                         `).join('')}
                     </div>
@@ -101,7 +127,7 @@ class MavHero extends HTMLElement {
 
         const startAutoplay = () => {
             stopAutoplay();
-            autoplayTimer = setInterval(nextSlide, 5000);
+            autoplayTimer = setInterval(nextSlide, 7000);
         };
 
         const stopAutoplay = () => {
