@@ -185,7 +185,7 @@ class ProductHero extends HTMLElement {
                             ${versionsSection}
 
                             <div class="product-hero__actions">
-                                <a href="https://wa.me/5549988746185?text=Olá, gostaria de solicitar um orçamento para ${encodeURIComponent(product.name)}" 
+                                <a href="https://wa.me/5549998277631?text=Olá, gostaria de solicitar um orçamento para ${encodeURIComponent(product.name)}" 
                                    class="btn-primary"
                                    target="_blank">
                                     <i class="bi-whatsapp"></i>
