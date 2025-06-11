@@ -6,6 +6,17 @@
     height: fit-content;
 }
 
+.phone-link {
+    text-decoration: none;
+    color: #f8f9fa;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
 .tech-background {
     display: none;
 }

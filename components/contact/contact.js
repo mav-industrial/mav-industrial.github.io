@@ -25,8 +25,10 @@ class MavContact extends HTMLElement {
                                     <div class="contact-item">
                                         <i class="bi-telephone-fill"></i>
                                         <div class="contact-text">
-                                            <h4>Telefone</h4>
-                                            <p>+55 (49) 98874-6185</p>
+                                            <h4>Telefones</h4>
+                                            <a class="phone-link" href="tel:49998277631"><p>49 9 9827-7631</p></a>
+                                            <a class="phone-link" href="tel:49991048689"><p>49 9 9104-8689</p></a>
+                                            <a class="phone-link" href="tel:499988746185"><p>49 9 8874-6185</p></a>
                                         </div>
                                     </div>
                                     
