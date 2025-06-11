@@ -51,6 +51,7 @@ window.mavProducts = [
         metadata: {
             order_banner: 4, // Ordem de exibição
             order_gallery: 4, // Ordem de exibição
+            hide_from_gallery: false
         }
     },
     {
@@ -95,6 +96,7 @@ window.mavProducts = [
         metadata: {
             order_banner: 2, // Ordem de exibição
             order_gallery: 2, // Ordem de exibição
+            hide_from_gallery: false
         }
     },
     {
@@ -149,6 +151,7 @@ window.mavProducts = [
         metadata: {
             order_banner: 4, // Ordem de exibição
             order_gallery: 4, // Ordem de exibição
+            hide_from_gallery: false
         }
     },
     {
@@ -165,7 +168,7 @@ window.mavProducts = [
             gallery: [
                 "images/PROCESSADOR.png"
             ],
-            model3d: "models/pm-tach-250(001).glb",
+            model3d: "models/pm-tach-250.glb",
             webCarousel: "images/tacho_de_cozimento_1.png",
             mobileCarousel: "images/tacho_de_cozimento_1.png",            
         },
@@ -193,6 +196,7 @@ window.mavProducts = [
         metadata: {
             order_banner: 3, // Ordem de exibição
             order_gallery: 3, // Ordem de exibição
+            hide_from_gallery: false
         }
     },
     {
@@ -247,6 +251,7 @@ window.mavProducts = [
         metadata: {
             order_banner: 4, // Ordem de exibição
             order_gallery: 4, // Ordem de exibição
+            hide_from_gallery: false
         }
     },
     {
@@ -299,8 +304,64 @@ window.mavProducts = [
 
         // Metadados
         metadata: {
+            order_banner: 2, // Ordem de exibição
+            order_gallery: 2, // Ordem de exibição
+            hide_from_gallery: false
+        }
+    },
+    {
+        id: "mav_logo",
+        slug: "mav_logo",
+        name: "MAV INDUSTRIAL",
+        shortDescription: "Transforme cada gota de leite em produtividade e eficiência",
+        fullDescription: "Mav Logo",
+        
+        // Mídia
+        images: {
+            banner: null,
+            thumbnail: "images/mav_logo.png",
+            gallery: [
+                "images/mav_logo.png"
+            ],
+            model3d: null,
+            webCarousel: "images/mavLogo.png",
+            mobileCarousel: "images/mavLogo.png",            
+        },
+        video: {
+            id: null,
+            platform: null
+        },
+
+        // Especificações técnicas
+        components: {
+            title: "Componentes Principais",
+            items: [
+                "Sistema de envase automático",
+                "Sistema de selagem",
+                "Sistema de tampagem",
+                "Esteira transportadora"
+            ]
+        },
+
+        // Componentes
+        specifications: {
+            title: "Especificações Técnicas",
+            items: [
+                "Capacidade: até 1.400 potes/hora",
+                "Tamanhos de pote: 180ml, 270ml e 400ml",
+                "Sistema de enchimento de alta precisão",
+                "Ajuste automático para diferentes tamanhos"
+            ]
+        },
+
+        // Versões disponíveis
+        versions: null,
+
+        // Metadados
+        metadata: {
             order_banner: 1, // Ordem de exibição
             order_gallery: 1, // Ordem de exibição
+            hide_from_gallery: true
         }
     },
 ]; 
