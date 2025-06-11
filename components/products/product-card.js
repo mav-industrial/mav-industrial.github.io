@@ -55,12 +55,12 @@ class ProductCard extends HTMLElement {
     render() {
         // Ordena os produtos pelo order_gallery
         const orderedProducts = mavProducts
-            .filter(product => product.metadata?.order_gallery != null)
+            .filter(product => product.metadata?.order_gallery != null && !product.metadata?.hide_from_gallery)
             .sort((a, b) => a.metadata.order_gallery - b.metadata.order_gallery);
 
         // Produtos sem ordem ficam no final
         const unorderedProducts = mavProducts
-            .filter(product => product.metadata?.order_gallery == null);
+            .filter(product => product.metadata?.order_gallery == null && !product.metadata?.hide_from_gallery);
 
         // Combina as duas listas
         const allProducts = [...orderedProducts, ...unorderedProducts];
