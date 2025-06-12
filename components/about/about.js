@@ -33,22 +33,7 @@ class MavAbout extends HTMLElement {
                             </h3>
                         </div>
                         
-                        <div class="about-gallery">
-                            <div class="gallery-grid">
-                                <div class="image-card" data-aos="zoom-in" data-aos-delay="200">
-                                    <img src="images/mav-produto-1.jpg" alt="Produto MAV - Inovação em Laticínios" loading="lazy">
-                                </div>
-                                <div class="image-card" data-aos="zoom-in" data-aos-delay="400">
-                                    <img src="images/mav-produto-2.jpg" alt="Produto MAV - Tecnologia Avançada" loading="lazy">
-                                </div>
-                                <div class="image-card" data-aos="zoom-in" data-aos-delay="600">
-                                    <img src="images/mav-produto-3.jpg" alt="Produto MAV - Automação Industrial" loading="lazy">
-                                </div>
-                                <div class="image-card" data-aos="zoom-in" data-aos-delay="800">
-                                    <img src="images/mav-produto-4.jpg" alt="Produto MAV - Eficiência em Produção" loading="lazy">
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
