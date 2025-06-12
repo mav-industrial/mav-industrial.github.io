@@ -70,10 +70,10 @@ class MavHeader extends HTMLElement {
                                     </a>
                                 </div>
                                 <div class="copy-wrapper">
-                                    <a href="#" title="Clique para copiar" class="copy-trigger" data-copy="+55513308-6824">
+                                    <!-- <a href="#" title="Clique para copiar" class="copy-trigger" data-copy="+55513308-6824">
                                         <i class="bi-telephone"></i>
                                         <span>+55 51 3308-6824</span>
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                             <ul class="header-fixed__social">
