@@ -168,7 +168,7 @@ window.mavProducts = [
             gallery: [
                 "images/PROCESSADOR.png"
             ],
-            model3d: "models/pm-tach-250.glb",
+            model3d: "models/tacho_de_cozimento.glb",
             webCarousel: "images/tacho_de_cozimento_1.png",
             mobileCarousel: "images/tacho_de_cozimento_1.png",            
         },
