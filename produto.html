@@ -9,16 +9,8 @@
         <meta name="addsearch-custom-field" content="product=Envasadora para Líquidos e Pastosos">
         <meta name="addsearch-custom-field" content="product=Envolvedora de Filme Stretch">
         <meta name="addsearch-custom-field" content="product=Equipamentos para Ramo Alimentício">
-        <title>MAV Industrial</title>     
+        <title>MAV Industrial - Envolvedora de Filme Stretch</title>
         <link rel="shortcut icon" href="images/favicon.ico">
-        
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NF4395BD');</script>
-        <!-- End Google Tag Manager -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
@@ -26,128 +18,143 @@
         <link rel="stylesheet" href="css/bootstrap-icons.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="components/header_nav/nav.css">
-        <link rel="stylesheet" href="components/about/about.css">
-        <link rel="stylesheet" href="components/contact/contact.css">
-        <link rel="stylesheet" href="components/products/product-grid.css">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11418933953"></script>
-        <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11418933953');</script>
-        <script src="js/products.js"></script>
-        <script src="components/hero/hero.js" defer></script>
-        <script src="components/header_nav/header.js" defer></script>
-        <script src="components/products/product-card.js" defer></script>
-        <script src="components/about/about.js" defer></script>
-        <script src="components/contact/contact.js" defer></script>
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF4395BD"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        
-        <mav-header></mav-header>
-        <mav-hero></mav-hero>
-        <mav-about></mav-about>
-
-        <main>
-            <section class="product-section" id="produtos">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>PRODUTOS</h2>
-                        </div>
-                        <product-card></product-card>
-                    </div>
-                </div>
-            </section>
-
-            <mav-contact></mav-contact>
-        </main>
-
-        <a id="wppContact" href="https://wa.me/5549998277631?text=Ol%C3%A1%2C%20encontrei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20conversar!" class="float-wpp" target="_blank">
-            <i class="bi-whatsapp wpp-float"></i>
-        </a>
-
+        <script src="data/products/index.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
-        <script src="js/animated-headline.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
+        <script src="components/header_nav/header.js" defer></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11418933953"></script>
+        <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11418933953');</script>
+        <link rel="stylesheet" href="components/product/product-hero.css">
+        <script src="components/product/product-hero.js" defer></script>
+        <link rel="stylesheet" href="components/contact/contact.css">
+        <script src="components/contact/contact.js" defer></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+        <mav-header></mav-header>
+        <main>
+            <product-hero></product-hero>
+            <mav-contact></mav-contact>
+        </main>
 
         <script>
-            var wpp = document.getElementById("wppContact");
-            wpp.addEventListener("click", function(event) {
-                gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});
-            });
+            function getWhatsAppButton() {
+                const params = new URLSearchParams(window.location.search);
+                const slug = params.get('slug');
+                const product = mavProducts.find(p => p.slug === slug);
+                
+                return `
+                    <a href="https://wa.me/5549998277631?text=Olá, encontrei o site de vocês e gostaria de conversar sobre a ${encodeURIComponent(product?.name || '')}!" 
+                       class="float-wpp" 
+                       target="_blank"
+                       onclick="gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});">
+                        <i class="bi-whatsapp wpp-float"></i>
+                    </a>
+                `;
+            }
+
+            document.body.insertAdjacentHTML('beforeend', getWhatsAppButton());
         </script>
 
         <script>
-            // Função para carregar produtos em background
-            function lazyLoadProducts() {
-                console.log('🔄 Iniciando carregamento dos produtos...');
-                
-                return new Promise((resolve) => {
-                    const script = document.createElement('script');
-                    script.src = 'data/products/index.js';
-                    script.onload = () => {
-                        console.log('✨ Produtos carregados com sucesso!');
-                        localStorage.setItem('mavProducts', JSON.stringify(mavProducts));
-                        resolve();
-                    };
-                    script.onerror = () => {
-                        console.log('❌ Erro ao carregar produtos');
-                        resolve();
-                    };
-                    document.body.appendChild(script);
-                });
-            }
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+            const product = mavProducts.find(p => p.slug === slug);
+        </script>
 
-            // Função para carregar imagens em background
-            async function preloadImages(products) {
-                console.log('🚀 Iniciando preload das imagens e modelos...');
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Tenta pegar do cache primeiro
+                let products = window.mavProducts;
                 
-                for (const product of products) {
-                    if (product.images?.model3d) {
-                        console.log(`🎮 Verificando modelo 3D: ${product.images.model3d}`);
-                        
-                        try {
-                            const response = await fetch(product.images.model3d, {
-                                cache: 'force-cache',
-                                headers: {
-                                    'Cache-Control': 'max-age=31536000'
-                                }
-                            });
-                            
-                            if (response.ok) {
-                                console.log(`✨ Modelo 3D carregado: ${product.images.model3d}`);
-                            } else {
-                                console.log(`⚠️ Modelo 3D não encontrado: ${product.images.model3d}`);
-                            }
-                        } catch (error) {
-                            console.log(`❌ Erro ao carregar modelo 3D: ${error}`);
-                        }
+                if (!products) {
+                    // Se não tem no window, tenta do localStorage
+                    const cached = localStorage.getItem('mavProducts');
+                    if (cached) {
+                        products = JSON.parse(cached);
+                    } else {
+                        // Se não tem em lugar nenhum, redireciona pro index
+                        window.location.href = 'index.html';
+                        return;
                     }
                 }
-            }
 
-            // Inicia o lazy loading após a página carregar
-            window.addEventListener('load', async () => {
-                console.log('🎯 Iniciando lazy loading...');
+                const params = new URLSearchParams(window.location.search);
+                const slug = params.get('slug');
+                const product = products.find(p => p.slug === slug);
                 
-                const cachedProducts = localStorage.getItem('mavProducts');
-                
-                if (!cachedProducts) {
-                    console.log('🔍 Cache não encontrado, carregando produtos...');
-                    await lazyLoadProducts();
-                } else {
-                    console.log('📋 Usando produtos do cache');
-                    window.mavProducts = JSON.parse(cachedProducts);
+                if (!product) {
+                    window.location.href = 'index.html';
+                    return;
                 }
 
-                // Preload das imagens
-                await preloadImages(mavProducts);
-        });
+                // Atualiza título da página
+                document.title = `MAV Industrial - ${product.name}`;
+                
+                // Atualiza conteúdo
+                document.querySelectorAll('.product-name').forEach(el => el.textContent = product.name);
+                document.querySelector('.product-short-description').textContent = product.shortDescription;
+                document.querySelector('.product-full-description').textContent = product.fullDescription;
+                
+                // Atualiza imagens
+                document.querySelector('.product-image').src = product.images.thumbnail;
+                document.querySelector('.product-image').alt = product.name;
+
+                // Verifica se existe galeria antes de tentar acessar
+                const galleryElement = document.querySelector('.product-gallery');
+                if (galleryElement && product.images.gallery?.length > 0) {
+                    galleryElement.src = product.images.gallery[0];
+                }
+
+                // Atualiza especificações
+                document.querySelector('.specs-title').textContent = product.specifications.title;
+                const specsList = document.querySelector('.specs-list');
+                specsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.specifications.items.forEach(item => {
+                    specsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${item}</p>`;
+                });
+
+                // Atualiza componentes
+                document.querySelector('.components-title').textContent = product.components.title;
+                const componentsList = document.querySelector('.components-list');
+                componentsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.components.items.forEach(item => {
+                    componentsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${item}</p>`;
+                });
+
+                // Atualiza versões
+                const versionsList = document.querySelector('.versions-list');
+                versionsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.versions.forEach(version => {
+                    versionsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${version}</p>`;
+                });
+
+                // Se tiver vídeo, atualiza o iframe
+                if (product.video?.id) {
+                    const videoUrl = product.video.platform === 'youtube' 
+                        ? `https://www.youtube.com/embed/${product.video.id}`
+                        : product.video.url;
+                    
+                    document.querySelector('#product-video').src = videoUrl;
+                }
+
+                // Atualiza o link do WhatsApp
+                const wppLink = document.querySelector('.float-wpp');
+                wppLink.href = `https://wa.me/5549998277631?text=Olá, gostaria de solicitar um orçamento para ${encodeURIComponent(product?.name || '')}`;
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const wpp = document.getElementById("wppContact");
+                if (wpp) {
+                    wpp.addEventListener("click", function(event) {
+                        gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});
+                    });
+                }
+            });
         </script>
 
     </body>
