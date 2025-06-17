@@ -1,367 +1,174 @@
-window.mavProducts = [
-    {
-        id: "queijomatic",
-        slug: "queijomatic",
-        name: "Queijomatic",
-        shortDescription: "Tecnologia Indispensável para laticínios que buscam aumentar a produtividade e garantir um produto final de alta qualidade.",
-        fullDescription: "Máquina que automatiza o início da fabricação do queijo, transformando leite em massa coagulada de forma rápida e uniforme. O processo começa com o leite adicionado ao tanque, onde ocorre a coagulação. Durante essa etapa, liras de corte – eixos com facas – cortam a massa lentamente, formando pedaços pequenos e uniformes. O cozimento é feito com vapor que circula por uma camisa dupla ao redor do tanque, garantindo que a massa aqueça de maneira uniforme. Após o processo, a mistura de massa e soro é despejada na Dreno Prensa ",
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A MAV Industrial desenvolve soluções para o ramo alimentício em aço inox. Envolvedora para líquidos e pastosos. Envolvedora de filme stretch. Elevadores pneumáticos. Esterilizadoras. Cubas Assépsia. Esteiras. Ralos. Tanques. Prateleiras. Carrinhos. Mesas.">
+        <meta property="og:description" content="A summary of your web page.">
+        <meta name="author" content="Mav Industrial">
+        <meta name="addsearch-custom-field" content="product=Envasadora para Líquidos e Pastosos">
+        <meta name="addsearch-custom-field" content="product=Envolvedora de Filme Stretch">
+        <meta name="addsearch-custom-field" content="product=Equipamentos para Ramo Alimentício">
+        <title>MAV Industrial - Envolvedora de Filme Stretch</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
         
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/queijomatic.png",
-            gallery: [
-                "images/queijomatic.png"
-            ],
-            model3d: "models/montagem_queijomatic.glb",
-            webCarousel: "images/queijomatic.png",
-            mobileCarousel: "images/queijomatic.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
-
-        // Especificações técnicas
-        components: {
-            title: "Componentes Principais",
-            items: [
-                "Tanque de coagulação",
-                "Liras de corte com eixos e facas",
-                "Sistema de camisa dupla para vapor",
-                "Sistema de descarga para Dreno Prensa"
-            ]
-        },
-
-        // Componentes
-        specifications: {
-            title: "Especificações Técnicas",
-            items: [
-                "Coagulação automatizada do leite",
-                "Corte uniforme da massa",
-                "Aquecimento por circulação de vapor",
-                "Sistema de descarga automática"
-            ]
-        },
-
-        // Versões disponíveis
-        versions: null,
-
-        // Metadados
-        metadata: {
-            order_banner: 4, // Ordem de exibição
-            order_gallery: 4, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "DRENO-PRENSA AUTOMÁTICA",
-        slug: "dreno-prensa-automatica",
-        name: "Dreno Prensa Automática",
-        shortDescription: "É uma tecnologia ideal para laticínios que buscam aumentar a produtividade, melhorar a qualidade do produto final e reduzir perdas durante a fabricação.",
-        fullDescription: "Equipamento projetado para automatizar o processo de separação do soro e da massa do queijo, além de realizar o corte preciso do produto final. Ao receber a massa, ela é distribuída sobre um lençol micro perfurado que permite o escoamento do soro, deixando apenas a massa sobre a superfície. Esse processo ocorre de forma automática, sem a necessidade de intervenção do operador. A máquina conta com facas de corte ajustáveis que moldam o queijo de acordo com o formato e o tamanho necessários para a produção. Todo o processo é rápido, preciso e padronizado, resultando em produtos uniformes e de alta qualidade.",
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NF4395BD');</script>
+        <!-- End Google Tag Manager -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="components/header_nav/nav.css">
+        <script src="data/products/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="components/header_nav/header.js" defer></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11418933953"></script>
+        <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11418933953');</script>
+        <link rel="stylesheet" href="components/product/product-hero.css">
+        <script src="components/product/product-hero.js" defer></script>
+        <link rel="stylesheet" href="components/contact/contact.css">
+        <script src="components/contact/contact.js" defer></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF4395BD"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/dreno_prensa.png",
-            gallery: [
-                "images/DRENO-PRENSA AUTOMÁTICA.png"
-            ],
-            model3d: "models/montagem_drenoprensa_4000_litros.glb",
-            webCarousel: "images/dreno_prensa.png",
-            mobileCarousel: "images/DRENO-PRENSA AUTOMÁTICA.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
+        <mav-header></mav-header>
+        <main>
+            <product-hero></product-hero>
+            <mav-contact></mav-contact>
+        </main>
 
-        // Especificações técnicas
-        components: {
-            title: null,
-            items: null
-        },
+        <script>
+            function getWhatsAppButton() {
+                const params = new URLSearchParams(window.location.search);
+                const slug = params.get('slug');
+                const product = mavProducts.find(p => p.slug === slug);
+                
+                return `
+                    <a href="https://wa.me/5549998277631?text=Olá, encontrei o site de vocês e gostaria de conversar sobre a ${encodeURIComponent(product?.name || '')}!" 
+                       class="float-wpp" 
+                       target="_blank"
+                       onclick="gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});">
+                        <i class="bi-whatsapp wpp-float"></i>
+                    </a>
+                `;
+            }
 
-        // Componentes
-        specifications: {
-            title: null,
-            items: null
-        },
+            document.body.insertAdjacentHTML('beforeend', getWhatsAppButton());
+        </script>
 
-        // Versões disponíveis
-        versions: null,
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+            const product = mavProducts.find(p => p.slug === slug);
+        </script>
 
-        // Metadados
-        metadata: {
-            order_banner: 2, // Ordem de exibição
-            order_gallery: 2, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "PROCESSADOR",
-        slug: "processador",
-        name: "Processador",
-        shortDescription: "Tecnologia ideal para laticínios que buscam aumentar a produtividade, reduzir o tempo de preparo e garantir produtos com textura e qualidade uniformes.",
-        fullDescription: "Equipamento utilizado para acelerar e padronizar o processo de preparo de produtos lácteos, como requeijão, nata e doce de leite. O operador adiciona os insumos diretamente na panela – como pedaços de queijo, sal e demais ingredientes. No fundo do equipamento, duas lâminas de corte realizam a trituração e emulsificação dos componentes, garantindo uma mistura uniforme e consistente. A panela possui uma estrutura de parede dupla, por onde passa vapor, permitindo o cozimento e a fusão dos ingredientes de forma rápida e eficiente. Entre 9 a 10 minutos o produto está pronto para ser envasado ou passar por outras etapas de produção.",
-        
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/PROCESSADOR.png",
-            gallery: [
-                "images/PROCESSADOR.png"
-            ],
-            model3d: "models/processadora_80kg.glb",
-            webCarousel: "images/PROCESSADOR.png",
-            mobileCarousel: "images/PROCESSADOR.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Tenta pegar do cache primeiro
+                let products = window.mavProducts;
+                
+                if (!products) {
+                    // Se não tem no window, tenta do localStorage
+                    const cached = localStorage.getItem('mavProducts');
+                    if (cached) {
+                        products = JSON.parse(cached);
+                    } else {
+                        // Se não tem em lugar nenhum, redireciona pro index
+                        window.location.href = 'index.html';
+                        return;
+                    }
+                }
 
-        // Especificações técnicas
-        components: {
-            title: "Componentes Principais",
-            items: [
-                "Panela com parede dupla",
-                "Duas lâminas de corte",
-                "Sistema de aquecimento a vapor",
-                "Sistema de trituração e emulsificação"
-            ]
-        },
+                const params = new URLSearchParams(window.location.search);
+                const slug = params.get('slug');
+                const product = products.find(p => p.slug === slug);
+                
+                if (!product) {
+                    window.location.href = 'index.html';
+                    return;
+                }
 
-        // Componentes
-        specifications: {
-            title: "Especificações Técnicas",
-            items: [
-                "Tempo de preparo: 9-10 minutos",
-                "Sistema de cozimento e fusão integrado",
-                "Trituração e emulsificação simultâneas",
-                "Mistura uniforme e consistente"
-            ]
-        },
+                // Atualiza título da página
+                document.title = `MAV Industrial - ${product.name}`;
+                
+                // Atualiza conteúdo
+                document.querySelectorAll('.product-name').forEach(el => el.textContent = product.name);
+                document.querySelector('.product-short-description').textContent = product.shortDescription;
+                document.querySelector('.product-full-description').textContent = product.fullDescription;
+                
+                // Atualiza imagens
+                document.querySelector('.product-image').src = product.images.thumbnail;
+                document.querySelector('.product-image').alt = product.name;
 
-        // Versões disponíveis
-        versions: null,
+                // Verifica se existe galeria antes de tentar acessar
+                const galleryElement = document.querySelector('.product-gallery');
+                if (galleryElement && product.images.gallery?.length > 0) {
+                    galleryElement.src = product.images.gallery[0];
+                }
 
-        // Metadados
-        metadata: {
-            order_banner: 4, // Ordem de exibição
-            order_gallery: 4, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "TACHO DE COZIMENTO",
-        slug: "tacho-de-cozimento",
-        name: "Tacho de Cozimento",
-        shortDescription: "Ideal para laticínios que buscam padronizar a produção, reduzir o esforço físico e ter controle total sobre a textura e qualidade dos produtos.",
-        fullDescription: "Funciona com o mesmo princípio da panela de cozimento, utilizando vapor para aquecer e fundir os ingredientes. A diferença está no processo: em vez de facas de corte, o tacho possui um mexedor que mantém o produto em movimento constante até que ele cozinhe e comece a se fundir. Com capacidade de 300 litros, o tacho é ideal para produções em maior escala. Esse método proporciona um processo de fabricação mais lento, permitindo maior controle sobre o tempo de cozimento e a textura do produto final. É ideal para produções que exigem ajustes na consistência, resultando em produtos mais sólidos ou mais líquidos, conforme a necessidade",
-        
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/tacho_de_cozimento_1.png",
-            gallery: [
-                "images/PROCESSADOR.png"
-            ],
-            model3d: "models/pm-tach-250.glb",
-            webCarousel: "images/tacho_de_cozimento_1.png",
-            mobileCarousel: "images/tacho_de_cozimento_1.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
+                // Atualiza especificações
+                document.querySelector('.specs-title').textContent = product.specifications.title;
+                const specsList = document.querySelector('.specs-list');
+                specsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.specifications.items.forEach(item => {
+                    specsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${item}</p>`;
+                });
 
-        // Especificações técnicas
-        components: {
-            title: null,
-            items: null
-        },
+                // Atualiza componentes
+                document.querySelector('.components-title').textContent = product.components.title;
+                const componentsList = document.querySelector('.components-list');
+                componentsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.components.items.forEach(item => {
+                    componentsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${item}</p>`;
+                });
 
-        // Componentes
-        specifications: {
-            title: null,
-            items: null
-        },
+                // Atualiza versões
+                const versionsList = document.querySelector('.versions-list');
+                versionsList.innerHTML = ''; // Limpa o conteúdo anterior
+                product.versions.forEach(version => {
+                    versionsList.innerHTML += `<p><img class="marcador" src="images/prd-marcador.svg"> ${version}</p>`;
+                });
 
-        // Versões disponíveis
-        versions: null,
+                // Se tiver vídeo, atualiza o iframe
+                if (product.video?.id) {
+                    const videoUrl = product.video.platform === 'youtube' 
+                        ? `https://www.youtube.com/embed/${product.video.id}`
+                        : product.video.url;
+                    
+                    document.querySelector('#product-video').src = videoUrl;
+                }
 
-        // Metadados
-        metadata: {
-            order_banner: 3, // Ordem de exibição
-            order_gallery: 3, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "RICOTEIRA",
-        slug: "ricoteira",
-        name: "Ricoteira",
-        shortDescription: "Máquina ideal para laticínios que buscam aumentar a produção e melhorar a eficiência na fabricação de ricota.",
-        fullDescription: "É um tanque vertical com fundo cônico, projetado para facilitar e agilizar o processo de produção de ricota a partir do soro do leite – um subproduto resultante da fabricação de queijos. O soro é colocado em um tanque vertical com fundo cônico e aquecido diretamente com vapor, iniciando o processo de coagulação. Durante esse processo, podem ser adicionados insumos para ajudar na formação da ricota. O formato cônico do tanque é o que torna o processo mais prático. Após o aquecimento, a ricota se forma na parte superior do tanque, enquanto o soro desce para a parte inferior. O operador simplesmente abre uma válvula na base para drenar o soro, restando apenas a ricota, que é retirada e colocada em moldes para formar blocos sólidos.",
+                // Atualiza o link do WhatsApp
+                const wppLink = document.querySelector('.float-wpp');
+                wppLink.href = `https://wa.me/5549998277631?text=Olá, gostaria de solicitar um orçamento para ${encodeURIComponent(product?.name || '')}`;
+            });
 
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/ricoteira_1.png",
-            gallery: [
-                "images/ricoteira_1.png"
-            ],
-            model3d: "models/pm-rico2000(001)rev-00.glb",
-            webCarousel: "images/ricoteira_1.png",
-            mobileCarousel: "images/ricoteira_1.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
+            document.addEventListener('DOMContentLoaded', function() {
+                const wpp = document.getElementById("wppContact");
+                if (wpp) {
+                    wpp.addEventListener("click", function(event) {
+                        gtag('event', 'conversion', {'send_to': 'AW-11418933953/yFEZCM-i0fgYEMG1_MQq'});
+                    });
+                }
+            });
+        </script>
 
-        // Especificações técnicas
-        components: {
-            title: "Componentes Principais",
-            items: [
-                "Tanque vertical com fundo cônico",
-                "Sistema de aquecimento a vapor",
-                "Válvula de drenagem na base",
-                "Sistema de retirada de ricota"
-            ]
-        },
-
-        // Componentes
-        specifications: {
-            title: "Especificações Técnicas",
-            items: [
-                "Aquecimento direto com vapor",
-                "Sistema de coagulação otimizado",
-                "Drenagem automática do soro",
-                "Formato cônico para separação eficiente"
-            ]
-        },
-
-        // Versões disponíveis
-        versions: null,
-
-        // Metadados
-        metadata: {
-            order_banner: 4, // Ordem de exibição
-            order_gallery: 4, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "ENVASADORA DE POTES AUTOMÁTICA",
-        slug: "envasadora-de-potes-automatica",
-        name: "Envasadora de potes automática",
-        shortDescription: "Essa tecnologia oferece um processo mais rápido, confiável e padronizado, ajudando a reduzir custos e melhorar a produtividade.",
-        fullDescription: "Desenvolvida para modernizar e otimizar o processo de envase, selagem e tampagem de potes em laticínios, proporcionando mais eficiência, precisão e segurança. Projetada para lidar com produtos como nata, doce de leite, requeijão e creme de ricota, a máquina automatiza todas as etapas do processo, eliminando a necessidade de trabalho manual e garantindo resultados consistentes e de alta qualidade. Com capacidade de envasar até 1.400 potes por hora, a máquina aumenta a produção em menos tempo, tornando a linha mais ágil. O enchimento dos potes é realizado com extrema precisão, evitando desperdícios e garantindo a padronização do produto final. Além disso, a máquina é ajustável para diferentes tamanhos de potes – 180 ml, 270 ml e 400 ml – se adaptando facilmente às necessidades do laticínio.",
-        
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/envasadora-de-potes-automatica-01.png",
-            gallery: [
-                "images/envasadora-de-potes-automatica-01.png"
-            ],
-            model3d: null,
-            webCarousel: "images/envasadora-de-potes-automatica-01.png",
-            mobileCarousel: "images/envasadora-de-potes-automatica-01.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
-
-        // Especificações técnicas
-        components: {
-            title: "Componentes Principais",
-            items: [
-                "Sistema de envase automático",
-                "Sistema de selagem",
-                "Sistema de tampagem",
-                "Esteira transportadora"
-            ]
-        },
-
-        // Componentes
-        specifications: {
-            title: "Especificações Técnicas",
-            items: [
-                "Capacidade: até 1.400 potes/hora",
-                "Tamanhos de pote: 180ml, 270ml e 400ml",
-                "Sistema de enchimento de alta precisão",
-                "Ajuste automático para diferentes tamanhos"
-            ]
-        },
-
-        // Versões disponíveis
-        versions: null,
-
-        // Metadados
-        metadata: {
-            order_banner: 2, // Ordem de exibição
-            order_gallery: 2, // Ordem de exibição
-            hide_from_gallery: false
-        }
-    },
-    {
-        id: "mav_logo",
-        slug: "mav_logo",
-        name: "MAV INDUSTRIAL",
-        shortDescription: "Transforme cada gota de leite em produtividade e eficiência",
-        fullDescription: "Mav Logo",
-        
-        // Mídia
-        images: {
-            banner: null,
-            thumbnail: "images/mav_logo.png",
-            gallery: [
-                "images/mav_logo.png"
-            ],
-            model3d: null,
-            webCarousel: "images/mavLogo.png",
-            mobileCarousel: "images/mavLogo.png",            
-        },
-        video: {
-            id: null,
-            platform: null
-        },
-
-        // Especificações técnicas
-        components: {
-            title: "Componentes Principais",
-            items: [
-                "Sistema de envase automático",
-                "Sistema de selagem",
-                "Sistema de tampagem",
-                "Esteira transportadora"
-            ]
-        },
-
-        // Componentes
-        specifications: {
-            title: "Especificações Técnicas",
-            items: [
-                "Capacidade: até 1.400 potes/hora",
-                "Tamanhos de pote: 180ml, 270ml e 400ml",
-                "Sistema de enchimento de alta precisão",
-                "Ajuste automático para diferentes tamanhos"
-            ]
-        },
-
-        // Versões disponíveis
-        versions: null,
-
-        // Metadados
-        metadata: {
-            order_banner: 1, // Ordem de exibição
-            order_gallery: 1, // Ordem de exibição
-            hide_from_gallery: true
-        }
-    },
-]; 
+    </body>
+</html>
